@@ -99,3 +99,19 @@ n-ый предмет источник будет перемещен в n-ый �
 2) r - Переключить перекладывание редких предметов.
 3) mr - Переключить перекладывание камней.
 
+## fr - ForesterBot
+Собирает и сажает саженцы, подрезает деревья/кусты и собирает урожай в области 3х3 вокруг игрока. Бот может быть настроен для обработки приямоугольной площади любого размера. Саженцы, во избежании переполнения инвентаря, будут выкладываться в контейнер, которым по умолчанию является Backpack. Контейнер должен быть в корне инвентаря. Так же могут быть указаны дополнительные предметы, перекладываемые в контейнер (например, собранные фрукты). Тайла типа степь (steppe) и тундра (moss) будут обрабатываться если посадка растений разрешена и у игрока есть лопата в инвентаре.
+
+### Параметры:
+1) s("Set the stamina threshold. Player will not do any actions if his stamina is lower than specified threshold",
+        "threshold(float value between 0 and 1)"),
+2) ca("Toggle the cutting of sprouts from all trees", ""),
+3) cs("Toggle the cutting of shriveled trees", ""),
+4) df("Toggle the cutting of all trees (deforestation)", ""),
+5) h("Toggle the harvesting", ""),
+6) p("Toggle the planting", ""),
+7) scn("Set the new name for containers to put sprouts/harvest", "container_name"),
+8) na("Set the number of actions bot will do each time", "number"),
+9) aim("Add new item name for moving into containers", "item_name"),
+10) area("Toggle the area processing mode. ", "tiles_ahead tiles_to_the_right"),
+11) area_speed("Set the speed of moving for area mode. Default value is 1 second per tile.", "speed(float value)");
